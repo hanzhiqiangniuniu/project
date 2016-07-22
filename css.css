@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: Î¢ÈíÑÅºÚ
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+}
+.clearfix:before,.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navigation{
+    height: 31px;
+    width: 100%;
+    background: #f2f2f2;
+    border: 1px solid #dddddd;
+}
+.navigation .box{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.box .ulNa{
+    float: right;
+    height: 14px;
+    line-height: 14px;
+    position: relative;
+    margin-top: 8px;
+}
+.box .ulNa li{
+    float: left;
+    margin-left: 16px;
+}
+.box .ulNa .heva1{
+    border-left: 1px solid #ddd;
+    padding-left: 19px;
+}
+.box .ulNa .heva2{
+    border-left: 1px solid #ddd;
+    padding-left: 11px;
+}
+.box .ulNa .heva3{
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+.box .ulNa .heva4{
+    border-left: 1px solid #ddd;
+    padding-left: 11px;
+}
+.box .ulNa li a{
+    font-size: 12px;
+    color: #666;
+
+}
+.box .ulNa li i,span{
+    background: url("img/icon.png")center center no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+.box .ulNa .heva1 i{
+    width: 13px;
+    height: 10px;
+    background-position: 0 0;
+    margin-right: 6px;
+}
+.box .ulNa .heva2 i{
+    width: 17px;
+    height: 14px;
+    background-position: -17px 0;
+    margin-right: 10px;
+}
+.box .ulNa .heva3 i,.box .ulNa .heva4 i{
+    background-position:-40px -1px;
+    width: 7px;
+    height: 4px;
+    margin-left: 4px;
+}
+.box .ulNa .heva4 span{
+    background-position: -53px 0;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
+
+.rNavig{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 30px;
+    height: 100%;
+    padding-top: 34px;
+    background: #202020;
+}
+.rNavig a{
+    width: 100%;
+    /*height: 93px;*/
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    line-height: 15px;
+    text-align: center;
+}
+.rNavig a:hover{
+    background: #ef2f23;
+}
+.rNavig a .iconO,.iconT,.iconTh,.iconF,.iconFi{
+    background-image: url(http://s17.mogucdn.com/p1/151013/upload_iezdmoldgm2tmnrtgqzdambqmmyde_30x220.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+.rNavig a .iconO{
+    background-position: -4px 0;
+}
+.rNavig a .iconT{
+    background-position: -4px -30px;
+}
+.rNavig a .iconTh{
+    background-position: -4px -90px;
+}
+.rNavig a .iconF{
+    background-position: -4px -60px;
+}
+.rNavig a .shop{
+    padding: 0 6px;
+    line-height: 15px;
+}
+.rNavig a .ledge{
+    width: 22px;
+    height: 1px;
+    background: #919191;
+    text-align: center;
+    margin: 13px 0 0 4px;
+}
+.rNavig .return{
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+
+}
+.rNavig .return .iconFi{
+    background-position: -3px -150px;
+    margin-left: 3px;
+    display: none;
+}
+.nav{
+    width: 100%;
+    height: 144px;
+}
+.nav .naviBottom{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.nav .naviBottom a{
+    background:url(http://s16.mogucdn.com/p1/160411/upload_ie4denjsgzrdqyleg4zdambqgiyde_207x51.png) no-repeat ;
+
+    width: 250px;
+    height: 60px;
+    margin-top: 37px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    float: left;
+}
+.nav .naviBottom .cenNa{
+    position: relative;
+    z-index: 50;
+    float: left;
+    width: 502px;
+    margin: 40px 0 0 99px;
+}
+/*.naviBottom .cenNa .cenNa1{
+
+    width: 100%;
+    height: 33px;
+    font-size: 12px;
+    border: 1px solid #3a3a3a;
+}
+.naviBottom .cenNa .cenNa1 input[text]{
+    width: 430px;
+    height: 100%;
+    color: #999;
+}
+.naviBottom .cenNa .cenNa1 input[button]{
+    width: 70px;
+    height: 100%;
+    background:#3a3a3a ;
+}*/
+.naviBottom .cenNa .cenNa1{
+    width: 500px;
+    height: 33px;
+    border: 1px solid #3a3a3a;
+}
+.nav .naviBottom .cenNa .sear{
+    width:70px ;
+    height: 100%;
+    font-size: 12px;
+    color: #666;
+    text-align:center;
+    line-height: 33px;
+    float: left;
+    cursor: pointer;
+}
+.nav .naviBottom .cenNa .sear i{
+    background: url("img/icon.png")no-repeat;
+    background-position: -40px -1px;
+    width: 7px;
+    height: 4px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 4px;
+}
+.nav .naviBottom .cenNa .cenNa1 .te{
+    width: 360px;
+    height: 100%;
+    font-size: 12px;
+    color: #999;
+    border: none;
+}
+.nav .naviBottom .cenNa .bu{
+    width: 70px;
+    height: 33px;
+    background: #3a3a3a;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    border: none;
+    padding-left: 2px;
+}
+.nav .naviBottom .cenNa .dress li{
+    font-size: 12px;
+    color: #999;
+    margin:9px 21px 0 0;
+    float: left;
+    cursor: pointer;
+}
+.nav .naviBottom .dimension{
+    background: url(http://s16.mogucdn.com/p1/160321/upload_ifrdgmrwga3gizrwg4zdambqmeyde_251x144.gif) no-repeat;
+    height: 144px;
+    width: 251px;
+    float: right;
+    position: relative;
+    margin-top: 0;
+}
+.nav .naviBottom .dimension img{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 57px;
+    left: 106px;
+    z-index: 11;
+}
+.wrap{
+    width: 100%;
+    border-bottom: 1px solid #f46;
+}
+.wrap .wrapCen{
+    width: 1200px;
+    margin: 0 auto;
+    height: 36px;
+}
+.wrap .wrapCen .acti li{
+    float: left;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 60px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.wrap .wrapCen .acti .allSh{
+    width: 225px;
+    height: 36px;
+    background: #f46;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+
+}
+.content{
+    width: 100%;
+    margin-top: -36px;
+}
+.content .contentL{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+.content .contentL .sho{
+    width: 213px;
+    border: 1px solid #ff0000;
+    padding: 1px 0 0 10px;
+    border-top: none;
+}
+.content .contentL .sho li{
+    width: 198px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #333;
+    border-bottom: 1px dashed #c7c7c7;
+    line-height: 38px;
+    padding-left: 10px;
+
+}
+.content .contentL .sho li .l1{
+    margin-left: 14px;
+}
+.content .contentL .sho li span{
+
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    height: 12px;
+    line-height: 12px;
+    border-right: 1px solid #999;
+    padding-right: 8px;
+    margin-left: 7px;
+}
+.content .contentL .sho li span.bg{
+    color: #f46;
+}
+.content .contentL .sho li .no{
+    border-right: none;
+    padding-right: 0;
+}
+
+
+
+
+
+
+
