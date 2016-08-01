@@ -9,9 +9,9 @@ ul,ol{
 a{
     text-decoration: none;
 }
-img{
+/*img{
     border: none;
-}
+}*/
 .clearfix:before,.clearfix:after{
     content: '';
     display: block;
@@ -100,7 +100,7 @@ img{
     padding-top: 34px;
     background: #202020;
 }
-.rNavig a{
+.rNavig .min{
     width: 100%;
     /*height: 93px;*/
     color: #fff;
@@ -109,10 +109,10 @@ img{
     line-height: 15px;
     text-align: center;
 }
-.rNavig a:hover{
+.rNavig .min:hover{
     background: #ef2f23;
 }
-.rNavig a .iconO,.iconT,.iconTh,.iconF,.iconFi{
+.rNavig .min .iconO,.iconT,.iconTh,.iconF,.iconFi{
     background-image: url(http://s17.mogucdn.com/p1/151013/upload_iezdmoldgm2tmnrtgqzdambqmmyde_30x220.png);
     background-repeat: no-repeat;
     display: block;
@@ -121,23 +121,23 @@ img{
     vertical-align: middle;
     margin-left: 4px;
 }
-.rNavig a .iconO{
+.rNavig .min .iconO{
     background-position: -4px 0;
 }
-.rNavig a .iconT{
+.rNavig .min .iconT{
     background-position: -4px -30px;
 }
-.rNavig a .iconTh{
+.rNavig .min .iconTh{
     background-position: -4px -90px;
 }
-.rNavig a .iconF{
+.rNavig .min .iconF{
     background-position: -4px -60px;
 }
-.rNavig a .shop{
+.rNavig .min .shop{
     padding: 0 6px;
     line-height: 15px;
 }
-.rNavig a .ledge{
+.rNavig .min .ledge{
     width: 22px;
     height: 1px;
     background: #919191;
@@ -230,6 +230,7 @@ img{
     font-size: 12px;
     color: #999;
     border: none;
+    outline: none;
 }
 .nav .naviBottom .cenNa .bu{
     width: 70px;
@@ -240,6 +241,7 @@ img{
     top: 1px;
     border: none;
     padding-left: 2px;
+    color: #fff;
 }
 .nav .naviBottom .cenNa .dress li{
     font-size: 12px;
@@ -267,6 +269,7 @@ img{
 .wrap{
     width: 100%;
     border-bottom: 1px solid #f46;
+    margin-top: -36px;
 }
 .wrap .wrapCen{
     width: 1200px;
@@ -293,20 +296,22 @@ img{
 }
 .content{
     width: 100%;
-    margin-top: -36px;
-}
-.content .contentL{
-    width: 1200px;
-    height: 300px;
     margin: 0 auto;
 }
-.content .contentL .sho{
+.content .contentT{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.content .contentT .sho{
     width: 213px;
     border: 1px solid #ff0000;
-    padding: 1px 0 0 10px;
+    padding: 2px 0 0 10px;
     border-top: none;
+    float: left;
+
 }
-.content .contentL .sho li{
+.content .contentT .sho li{
     width: 198px;
     height: 38px;
     font-size: 14px;
@@ -317,10 +322,13 @@ img{
     padding-left: 10px;
 
 }
-.content .contentL .sho li .l1{
+.content .contentT .sho .noBor{
+    border-bottom: none;
+}
+.content .contentT .sho li .l1{
     margin-left: 14px;
 }
-.content .contentL .sho li span{
+.content .contentT .sho li span{
 
     display: inline-block;
     font-size: 12px;
@@ -331,17 +339,451 @@ img{
     padding-right: 8px;
     margin-left: 7px;
 }
-.content .contentL .sho li span.bg{
+.content .contentT .sho li span.bg{
     color: #f46;
 }
-.content .contentL .sho li .no{
+.content .contentT .sho li .no{
     border-right: none;
     padding-right: 0;
 }
+.big{
+    width:715px;
+    height: 529px;
+    position: relative;
+    float: left;
+    background: url("") center center no-repeat #e1e1e1;
+    margin: 19px 0 0 20px;
+    overflow: hidden;
+}
+
+.big .boxInner div{
+    width: 715px;
+    height: 100%;
+    float: left;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.big .boxInner div img{
+    width: 100%;
+    height: 100%;
+}
+.big .dot{
+    width: 126px;
+    height: 14px;
+    background: #fff;
+    box-shadow: 3px 3px 5px #e1e1e1;
+    border-radius: 15px;
+    position: absolute;
+    left: 270px;
+    bottom: 20px;
+    padding: 8px 14px;
+    z-index: 10;
 
 
+}
+.big .dot li{
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 7px;
+    background: url("img/1.png") center center no-repeat;
+    background-position: -100px -20px;
 
+}
+.big .dot .no{
+    margin-right: 0;
+}
+.big .dot li.bg{
+    background:url("img/1.png")center center no-repeat;
+    background-position: -160px -20px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    -webkit-animation: rotate 5000ms cubic-bezier(0.6, 0, 0.6, 1) 1;-moz-animation: rotate 5000ms cubic-bezier(0.6, 0, 0.6, 1) 1;-o-animation: rotate 5000ms cubic-bezier(0.6, 0, 0.6, 1) 1;animation: rotate 5000ms cubic-bezier(0.6, 0, 0.6, 1) 1;
+    /*background: none;*/
+}
+.big a {
+    width: 30px;
+    height: 45px;
+    background-image:url("img/pre.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top:242.5px;
+    opacity: 0.3;
+    filter:alpha(opacity:30);
+    z-index: 10;
+    display: none;
+}
+.big a:hover{
+    opacity:1;
+    filter:alpha(opacity:100);
+}
+.big a.btnLeft{
+    background-position: 0 0;
+    left:30px;
+}
+.big a.btnRight{
+    background-position:-50px 0;
+    right: 30px;
+}
+.contentT .conR{
+    width: 180px;
+    height: 484px;
+    float: right;
+    border: 1px solid #ddd;
+    padding: 21px 19px 23px 19px;
+    margin-top: 18px;
+}
+.contentT .conR .inner{
+    width: 100%;
+    height: 100%;
+}
+.contentT .conR .inner .innerT{
+    width: 100%;
+    height: 220px;
+    padding-bottom: 23px;
+    border-bottom: 1px dashed #ddd;
+}
+.contentT .conR .inner .innerB{
+    padding-top: 20px;
+}
+.contentT .conR .inner .innerT img,.inner img{
+    width: 100%;
+    height: 100%;
+}
 
+/*限时快抢*/
+.grad{
+    width: 1200px;
+    margin: 80px auto;
+    border-top: 1px solid #0c0c0c;
 
+}
+.grad .flashSale{
+    width: 223px;
+    border-left:1px solid #ddd ;
+    border-right:1px solid #ddd ;
+    border-bottom: 4px solid #f46;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+.flashSale img{
+    width: 100%;
+    height:245px ;
+    margin-top: 50px;
+}
+.flashSale .limit{
+    display:block;
+    font-size: 20px;
+    color: #f46;
+    position: absolute;
+    top: 26px;
+    left: 10px;
+    font-weight: bold;
+}
+.flashSale .time{
+    position:absolute ;
+    top: 24px;
+    right: 18px;
+    padding-left: 8px;
+}
+.flashSale .time .timeH,.timeM,.timeS{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #f46;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 24px;
+}
+.flashSale .time .colon{
+    display: inline-block;
+    color: #f46;
+    margin-right: -3px;
+    margin-left: 3px;
+}
+.flashSale .pricing{
+    background: url("img/icn1.png")center center no-repeat;
+    background-position:0 -310px;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    right: 16px;
+    bottom: 17px;
+}
+.flashSale .pricing .money,.price{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.flashSale .pricing .money{
+    margin-top: 21px;
+    font-weight: bold;
+}
+.grad .pennyStock{
+    width: 360px;
+    margin-left: 20px;
+    float: right;
+}
+.pennyStock .penny1,.penny2{
+    width: 100%;
+    height: 145px;
+}
+.pennyStock .penny1{
+    margin-bottom: 10px;
+}
+.pennyStock .penny1 img,.penny2 img{
+    width: 100%;
+    height: 100%;
+}
+.grad .shopImg .groupon img{
+    width: 335px;
+    height: 301px;
+    float: left;
+}
+.grad .shopImg .specialOffer img{
+    width: 240px;
+    height: 301px;
+}
+/*蘑菇良品标题*/
+.goodProducts_title{
+    width: 1200px;
+    margin: 82px auto;
+    margin-bottom: 0;
+}
+.goodProducts_title .bias1,.bias2{
+    width: 492px;
+    height: 12px;
+    background: url("img/icn2.png") no-repeat;
+    background-position: 0 0;
+    margin-top: 6px;
+}
+.goodProducts_title .bias1{
+    float: left;
+}
+.goodProducts_title .bias2{
+    float: right;
+}
+.goodProducts_title h3 i{
+    background: url("img/pic21.png") no-repeat;
+    background-position: -37px 0;
+    width: 114px;
+    height: 24px;
+    display: inline-block;
+    margin-left: 52px;
+}
+.content .excellent{
+    width: 1200px;
+    margin: 15px auto;
+}
+.excellent .excellentL{
+    width: 223px;
+    height: 498px;
+    background: #fbfbfb;
+    border: 1px solid #ddd;
+    float: left;
+}
+.excellentL .excellentLtop .excellentLtop1,.excellentLtop2{
+    width: 176px;
+    height: 176px;
 
-
+}
+.excellentL .excellentLtop .excellentLtop1{
+    margin: 17px 23.5px 0 23.5px;
+}
+.excellentL .excellentLtop .excellentLtop2{
+    margin: 17px 23.5px 7px 23.5px;
+}
+.excellentL .excellentLtop .excellentLtop1 img,.excellentLtop2 img{
+    width: 100%;
+    height: 100%;
+}
+.excellentL .excellentLbottom{
+    width: 210px;
+    height: 90px;
+    margin: 0 6.5px 0 6.5px;
+}
+.excellentL .excellentLbottom li{
+    width: 70px;
+    height: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+.excellent .excellentR{
+    width: 955px;
+    height: 500px;
+    float: right;
+}
+.excellent .excellentR .excellentRtop1,.excellentRtop2,.excellentRtop3{
+    margin-right: 20px;
+    width: 305px;
+    height: 330px;
+    float: left;
+}
+.mRnone{
+    margin-right: 0;
+}
+.excellent .excellentR div img{
+    width: 100%;
+    height: 100%;
+}
+.excellentR .excellentRbottom{
+    width: 955px;
+    height: 150px;
+    margin-top: 20px;
+}
+.excellentR .excellentRbottom .excellentRbottom1{
+    width: 305px;
+    height: 150px;
+    margin-right: 20px;
+    float: left;
+}
+.excellentR .excellentRbottom .excellentRbottom1 img{
+    width: 130px;
+    height: 150px;
+    float: left;
+}
+.excellentR .excellentRbottom .excellentRbottom1 .introduce{
+    display: inline-block;
+    width: 155px;
+    height: 48px;
+    padding: 50px 0 0 10px;
+}
+.excellentRbottom .excellentRbottom1 .introduce .introduce1{
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+.excellentRbottom .excellentRbottom1 .introduce .introduce2{
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+.brand{
+    width: 1200px;
+    height: 500px;
+    margin: 15px auto;
+}
+.brand .brandL{
+    width: 225px;
+    height: 498px;
+    background: #fbfbfb;
+    float: left;
+}
+.brandL .brandL1{
+    width:223px ;
+    height: 254px;
+    border: 1px solid #ddd;
+}
+.brandL .brandL1 img{
+    width:183px ;
+    height: 213px;
+    margin: 20px;
+}
+.brandL .brandL2 img{
+    display: inline-block;
+    width: 111px;
+    height: 60px;
+    border: 1px solid #ddd;
+    float: left;
+}
+.brand .brandR{
+    width: 955px;
+    height: 500px;
+    margin-left: 20px;
+    float: left;
+}
+.brand .brandR .brandR1{
+    width: 305px;
+    height: 500px;
+    float: left;
+}
+.brand .brandR .brandR1 img{
+    width: 100%;
+    height: 100%;
+}
+.brand .brandR .brandR2 li{
+    width: 215px;
+    height: 248px;
+    border: 1px solid #ddd;
+    float: left;
+    cursor: pointer;
+    border-left: none;
+}
+.brand .brandR .brandR2 li img{
+    display: block;
+    width: 175px;
+    height: 170px;
+    margin: 20px;
+}
+.brand .brandR .brandR2 li a{
+    display: block;
+    width: 215px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #000000;
+}
+.brand .brandR .brandR2 li:hover{
+    text-decoration: underline;
+}
+.goodProducts_title h3 .icn2{
+    background: url("img/pic30.jpg") no-repeat;
+    background-position: -37px 0;
+}
+.goodProducts_title h3 .icn3{
+    background: url("img/pic47.jpg") no-repeat;
+    background-position: -37px 0;
+}
+.goodProducts_title h3 .icn4{
+    background: url("img/pic64.jpg") no-repeat;
+    background-position: -37px 0;
+}
+.goodProducts_title h3 .icn5{
+    background: url("img/pic81.jpg") no-repeat;
+    background-position: -37px 0;
+}
+.goodProducts_title h3 .icn6{
+     background: url("img/pic90.jpg") no-repeat;
+     background-position: -37px 0;
+}
+.goodProducts_title h3 .icn7{
+    background: url("img/pic99.jpg") no-repeat;
+    background-position: -37px 0;
+}
+.goodProducts_title h3 .icn8{
+    background: url("img/pic116.jpg") no-repeat;
+    background-position: -37px 0;
+}
+.goodProducts_title h3 .icn9{
+    background: url("img/pic133.jpg") no-repeat;
+    background-position: -37px 0;
+}
+.goodProducts_title h3 .icn10{
+    background: url("img/pic150.jpg") no-repeat;
+    background-position: -37px 0;
+}
+.goodProducts_title h3 .icn11{
+    background: url("img/pic167.jpg") no-repeat;
+    background-position: -37px 0;
+}
+.goodProducts_title h3 .icn2,.icn3,.icn4,.icn5,.icn6,.icn7,.icn8,.icn9,.icn10,.icn11{
+    width: 114px;
+    height: 24px;
+    display: inline-block;
+    margin-left: 52px;
+}

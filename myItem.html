@@ -5,7 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="css.css"/>
 </head>
-<body style="height: 1000px">
+<body>
 <!--灰色小导航-->
 <div class="navigation">
     <div class="box clearfix">
@@ -19,25 +19,36 @@
         </ul>
     </div>
 </div>
+<!--定位在最上边的搜索框-->
+<!--<div class="seek">
+    <div class="ico">
+        <a href="javascript:;" class="icoa"></a>
+    </div>
+    <div class="searchBox"></div>
+</div>-->
 <!--右边的固定条-->
 <div class="rNavig">
-    <a href="javascript:;">
+    <a href="javascript:;" class="min">
         <i class="iconO"></i>
+
         <div class="shop">购物车</div>
         <div class="ledge"></div>
     </a>
-    <a href="javascript:;">
+    <a href="javascript:;" class="min">
         <i class="iconT"></i>
+
         <div class="shop">优惠卷</div>
         <div class="ledge"></div>
     </a>
-    <a href="javascript:;">
+    <a href="javascript:;" class="min">
         <i class="iconTh"></i>
+
         <div class="shop">钱包</div>
         <div class="ledge"></div>
     </a>
-    <a href="javascript:;">
+    <a href="javascript:;" class="min">
         <i class="iconF"></i>
+
         <div class="shop">足迹</div>
         <div class="ledge"></div>
     </a>
@@ -70,7 +81,8 @@
             </ul>
         </div>
         <div class="dimension">
-            <img width="83" height="83" src="http://s18.mogucdn.com/p1/150929/upload_iezggyjwgrrdgztfgmzdambqmmyde_300x300.png" alt="">
+            <img width="83" height="83"
+                 src="http://s18.mogucdn.com/p1/150929/upload_iezggyjwgrrdgztfgmzdambqmmyde_300x300.png" alt="">
         </div>
     </div>
 </div>
@@ -86,8 +98,8 @@
             </ul>
         </div>
     </div>
-    <div class="contentL">
-        <ul class="sho">
+    <div class="contentT clearfix">
+        <ul class="sho clearfix">
             <li>上衣<span class="l1 bg">3折疯抢</span><span>时尚套装</span><span class="no bg">T恤</span></li>
             <li>裙子<span class="l1 bg">热销榜</span><span class="bg">连衣裙</span><span class="no">蕾丝裙</span></li>
             <li>裤子<span class="l1 bg">短裤</span><span>牛仔裤</span><span class="no">休闲裤</span></li>
@@ -101,17 +113,607 @@
             <li>家居<span class="l1">新品</span><span class="bg">四件套</span><span class="no">小家具</span></li>
             <li>母婴<span class="l1 bg">初秋新品</span><span>童装</span><span class="no">孕妇装</span></li>
             <li>零食<span class="l1">休闲食品</span><span class="bg">进口美食</span><span class="no bg">肉食</span></li>
-            <li>百货<span class="l1 bg">新品</span><span class="bg">玻璃杯</span><span class="no">晴雨伞</span></li>
+            <li class="noBor">百货<span class="l1 bg">新品</span><span class="bg">玻璃杯</span><span class="no">晴雨伞</span></li>
         </ul>
+
         <!--轮播图1-->
-        <div class="carousel">
-            <div class=" frame">
-                <img src="" alt=""/>
+        <div class="big" id="big">
+            <div class="boxInner">
+                <div><img r="img/pic1.jpg" alt=""/></div>
+                <div><img r="img/pic4.jpg" alt=""/></div>
+                <div><img r="img/pic5.jpg" alt=""/></div>
+                <div><img r="img/pic12.jpg" alt=""/></div>
+                <div><img r="img/pic13.jpg" alt=""/></div>
+                <div><img r="img/pic14.jpg" alt=""/></div>
+                <!--<div><img r="img/pic1.jpg" alt=""/></div>-->
+            </div>
+            <ul class="dot">
+                <li class="bg"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="no"></li>
+
+            </ul>
+            <a href="javascript:;" class="btnLeft"></a>
+            <a href="javascript:;" class="btnRight"></a>
+        </div>
+        
+        
+        <div class="conR">
+            <div class="inner">
+                <div class="innerT"><img src="img/pic10.jpg" alt=""/></div>
+                <div class="innerB"><img src="img/pic11.png" alt=""/></div>
             </div>
         </div>
 
+    </div>
+   <!--限时抢购-->
+    <div class="grad clearfix">
+        <div class="flashSale">
+            <img src="img/pic16.jpg" alt=""/>
+            <span class="limit">限时快抢</span>
+            <div class="time">
+                <span class="timeH" >00</span><span class="colon">:</span>
+                <span class="timeM">00</span><span class="colon">:</span>
+                <span class="timeS">00</span>
+            </div>
+            <div class="pricing">
+                <span class="money">10元</span>
+                <span class="price">快抢价</span>
+            </div>
+        </div>
 
+        <div class="pennyStock">
+            <div class="penny1">
+                <img src="img/pic19.jpg" alt=""/>
+            </div>
+            <div class="penny2">
+                <img src="img/pic20.jpg" alt=""/>
+            </div>
+        </div>
+
+        <div class="shopImg">
+            <div class="groupon">
+                <img src="img/pic17.jpg" alt=""/>
+            </div>
+            <div class="specialOffer">
+                <img src="img/pic18.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <!--蘑菇街良品标题-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i></i></h3>
+    </div>
+    <!--蘑菇街良品下面的内容-->
+    <div class="excellent clearfix">
+        <div class="excellentL clearfix">
+            <a href="javascript:;">
+                <div class="excellentLtop">
+                    <div class="excellentLtop1">
+                        <img src="img/pic22.png" alt=""/>
+                    </div>
+                    <div class="excellentLtop2">
+                        <img src="img/pic23.png" alt=""/>
+                    </div>
+                </div>
+            </a>
+            <ul class="excellentLbottom">
+                <li>初秋新款</li>
+                <li>显瘦连衣裙</li>
+                <li>百搭T恤</li>
+                <li>热卖裤装</li>
+                <li>WHT系列</li>
+                <li>清新衬衫</li>
+                <li>酷炫牛仔</li>
+                <li>必备打底</li>
+                <li>俏皮半身裙</li>
+            </ul>
+        </div>
+        <div class="excellentR clearfix">
+            <div class="excellentRtop clearfix">
+                <div class="excellentRtop1">
+                    <img src="img/pic24.jpg" alt=""/>
+                </div>
+                <div class="excellentRtop2">
+                    <img src="img/pic25.jpg" alt=""/>
+                </div>
+                <div class="excellentRtop3 mRnone">
+                    <img src="img/pic26.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="excellentRbottom">
+                <div class="excellentRbottom1">
+                    <img src="img/pic27.jpg" alt=""/>
+                    <span class="introduce">
+                        <span class="introduce1">初秋新款</span>
+                        <span class="introduce2">新品折扣抢先买</span>
+                    </span>
+                </div>
+                <div class="excellentRbottom1">
+                    <img src="img/pic28.jpg" alt=""/>
+                    <span class="introduce">
+                        <span class="introduce1">懒人必备套装</span>
+                        <span class="introduce2">一套出街简约大方</span>
+                    </span>
+                </div>
+                <div class="excellentRbottom1" style="margin-right: 0">
+                    <img src="img/pic29.jpg" alt=""/>
+                    <span class="introduce">
+                        <span class="introduce1">四季裤装</span>
+                        <span class="introduce2">必备款式一天一件</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--蘑菇街品牌标题-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i class="icn2"></i></h3>
+    </div>
+    <!--品牌内容-->
+    <div class="brand clearfix">
+        <div class="brandL clearfix">
+            <div class="brandL1">
+                <img src="img/pic31.jpg" alt=""/>
+            </div>
+            <div class="brandL2">
+                <img src="img/pic32.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic33.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic34.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic35.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic36.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic37.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic38.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic39.jpg" alt="" style="border-top: none"/>
+            </div>
+        </div>
+        <div class="brandR">
+            <div class="brandR1">
+                <img src="img/pic40.jpg" alt=""/>
+            </div>
+            <ul class="brandR2">
+                <li><img src="img/pic41.jpg" alt=""/><a href="javascript:;">环球鞋类旗舰店</a></li>
+                <li><img src="img/pic42.jpg" alt=""/><a href="javascript:;">人本鞋类旗舰店</a></li>
+                <li><img src="img/pic43.jpg" alt=""/><a href="javascript:;">卓诗尼旗舰店</a></li>
+                <li style="border-top: none"><img src="img/pic44.jpg" alt=""/><a href="javascript:;">达芙妮集团旗舰店</a></li>
+                <li style="border-top: none"><img src="img/pic45.jpg" alt=""/><a href="javascript:;">热风旗舰店</a></li>
+                <li style="border-top: none"><img src="img/pic46.jpg" alt=""/><a href="javascript:;">如熙旗舰店</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--潮流女装标题-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i class="icn3"></i></h3>
+    </div>
+    <!--潮流女装内容-->
+    <div class="brand clearfix">
+        <div class="brandL clearfix">
+            <div class="brandL1">
+                <img src="img/pic48.jpg" alt=""/>
+            </div>
+            <div class="brandL2">
+                <img src="img/pic49.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic50.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic51.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic52.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic53.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic54.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic55.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic56.jpg" alt="" style="border-top: none"/>
+            </div>
+        </div>
+        <div class="brandR">
+            <div class="brandR1">
+                <img src="img/pic57.jpg" alt=""/>
+            </div>
+            <ul class="brandR2">
+                <li><img src="img/pic58.png" alt=""/><a href="javascript:;">清凉T恤</a></li>
+                <li><img src="img/pic59.png" alt=""/><a href="javascript:;">夏款连衣裙</a></li>
+                <li><img src="img/pic60.png" alt=""/><a href="javascript:;">显瘦短裤</a></li>
+                <li style="border-top: none"><img src="img/pic61.png" alt=""/><a href="javascript:;">省心套装</a></li>
+                <li style="border-top: none"><img src="img/pic62.png" alt=""/><a href="javascript:;">打底背心</a></li>
+                <li style="border-top: none"><img src="img/pic63.png" alt=""/><a href="javascript:;">内衣</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--人气女鞋-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i class="icn4"></i></h3>
+    </div>
+    <!--人气女鞋标题内容-->
+    <div class="brand clearfix">
+        <div class="brandL clearfix">
+            <div class="brandL1">
+                <img src="img/pic65.jpg" alt=""/>
+            </div>
+            <div class="brandL2">
+                <img src="img/pic66.png" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic67.png" alt="" style="border-top: none"/>
+                <img src="img/pic68.png" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic69.png" alt="" style="border-top: none"/>
+                <img src="img/pic70.png" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic71.png" alt="" style="border-top: none"/>
+                <img src="img/pic72.png" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic73.png" alt="" style="border-top: none"/>
+            </div>
+        </div>
+        <div class="brandR">
+            <div class="brandR1">
+                <img src="img/pic74.jpg" alt=""/>
+            </div>
+            <ul class="brandR2">
+                <li><img src="img/pic75.jpg" alt=""/><a href="javascript:;">1折凉鞋</a></li>
+                <li><img src="img/pic76.jpg" alt=""/><a href="javascript:;">超值单鞋</a></li>
+                <li><img src="img/pic77.jpg" alt=""/><a href="javascript:;">青春帆布</a></li>
+                <li style="border-top: none"><img src="img/pic78.png" alt=""/><a href="javascript:;">休闲运动</a></li>
+                <li style="border-top: none"><img src="img/pic79.jpg" alt=""/><a href="javascript:;">摩登高跟</a></li>
+                <li style="border-top: none"><img src="img/pic80.jpg" alt=""/><a href="javascript:;">清凉拖鞋</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--男友潮搭-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i class="icn5"></i></h3>
+    </div>
+    <!--男友潮搭的内容-->
+    <div class="excellent clearfix">
+        <div class="excellentL clearfix">
+            <a href="javascript:;">
+                <div class="excellentLtop">
+                    <div class="excellentLtop1">
+                        <img src="img/pic82.png" alt=""/>
+                    </div>
+                    <div class="excellentLtop2">
+                        <img src="img/pic83.png" alt=""/>
+                    </div>
+                </div>
+            </a>
+            <ul class="excellentLbottom">
+                <li>T恤</li>
+                <li>POLO衫</li>
+                <li>衬衫</li>
+                <li>休闲裤</li>
+                <li>牛仔裤</li>
+                <li>短裤</li>
+                <li>凉鞋</li>
+                <li>休闲鞋</li>
+                <li>套装</li>
+            </ul>
+        </div>
+        <div class="excellentR clearfix">
+            <div class="excellentRtop clearfix">
+                <div class="excellentRtop1">
+                    <img src="img/pic84.jpg" alt=""/>
+                </div>
+                <div class="excellentRtop2">
+                    <img src="img/pic85.jpg" alt=""/>
+                </div>
+                <div class="excellentRtop3 mRnone">
+                    <img src="img/pic86.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="excellentRbottom">
+                <div class="excellentRbottom1">
+                    <img src="img/pic87.jpg" alt=""/>
+                    <span class="introduce">
+                        <span class="introduce1">潮流上衣</span>
+                        <span class="introduce2">必备单品</span>
+                    </span>
+                </div>
+                <div class="excellentRbottom1">
+                    <img src="img/pic88.jpg" alt=""/>
+                    <span class="introduce">
+                        <span class="introduce1">盛夏裤装</span>
+                        <span class="introduce2">1折起疯狂购</span>
+                    </span>
+                </div>
+                <div class="excellentRbottom1" style="margin-right: 0">
+                    <img src="img/pic89.gif" alt=""/>
+                    <span class="introduce">
+                        <span class="introduce1">休闲鞋履</span>
+                        <span class="introduce2">潮鞋直降100</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--箱包配饰-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i class="icn6"></i></h3>
+    </div>
+    <!--箱包配饰的内容-->
+    <div class="excellent clearfix">
+        <div class="excellentL clearfix">
+            <a href="javascript:;">
+                <div class="excellentLtop">
+                    <div class="excellentLtop1">
+                        <img src="img/pic91.png" alt=""/>
+                    </div>
+                    <div class="excellentLtop2">
+                        <img src="img/pic92.png" alt=""/>
+                    </div>
+                </div>
+            </a>
+            <ul class="excellentLbottom">
+                <li>新品包包</li>
+                <li>双肩包</li>
+                <li>斜挎包</li>
+                <li>锁骨链</li>
+                <li>耳饰</li>
+                <li>渔夫帽</li>
+                <li>手提包</li>
+                <li>发饰</li>
+                <li>单肩包</li>
+            </ul>
+        </div>
+        <div class="excellentR clearfix">
+            <div class="excellentRtop clearfix">
+                <div class="excellentRtop1">
+                    <img src="img/pic93.jpg" alt=""/>
+                </div>
+                <div class="excellentRtop2">
+                    <img src="img/pic94.jpg" alt=""/>
+                </div>
+                <div class="excellentRtop3 mRnone">
+                    <img src="img/pic95.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="excellentRbottom">
+                <div class="excellentRbottom1">
+                    <img src="img/pic96.jpg" alt=""/>
+                    <span class="introduce">
+                        <span class="introduce1">小方包</span>
+                        <span class="introduce2">高人气白菜价</span>
+                    </span>
+                </div>
+                <div class="excellentRbottom1">
+                    <img src="img/pic97.jpg" alt=""/>
+                    <span class="introduce">
+                        <span class="introduce1">猫眼太阳镜</span>
+                        <span class="introduce2">夏季遮阳利器</span>
+                    </span>
+                </div>
+                <div class="excellentRbottom1" style="margin-right: 0">
+                    <img src="img/pic98.jpg" alt=""/>
+                    <span class="introduce">
+                        <span class="introduce1">抽绳包袋</span>
+                        <span class="introduce2">随性气质风</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--运动瘦身-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i class="icn7"></i></h3>
+    </div>
+    <!--运动瘦身内容-->
+    <div class="brand clearfix">
+        <div class="brandL clearfix">
+            <div class="brandL1">
+                <img src="img/pic100.jpg" alt=""/>
+            </div>
+            <div class="brandL2">
+                <img src="img/pic101.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic102.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic103.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic104.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic105.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic106.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic107.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic108.jpg" alt="" style="border-top: none"/>
+            </div>
+        </div>
+        <div class="brandR">
+            <div class="brandR1">
+                <img src="img/pic109.jpg" alt=""/>
+            </div>
+            <ul class="brandR2">
+                <li><img src="img/pic110.jpg" alt=""/><a href="javascript:;">撩“汗”内衣</a></li>
+                <li><img src="img/pic111.jpg" alt=""/><a href="javascript:;">元气套装</a></li>
+                <li><img src="img/pic112.jpg" alt=""/><a href="javascript:;">减脂神器</a></li>
+                <li style="border-top: none"><img src="img/pic113.jpg" alt=""/><a href="javascript:;">清凉泳装</a></li>
+                <li style="border-top: none"><img src="img/pic114.jpg" alt=""/><a href="javascript:;">舒适凉鞋</a></li>
+                <li style="border-top: none"><img src="img/pic115.png" alt=""/><a href="javascript:;">休闲运动鞋</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--时尚美妆-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i class="icn8"></i></h3>
+    </div>
+    <!--时尚美妆内容-->
+    <div class="brand clearfix">
+        <div class="brandL clearfix">
+            <div class="brandL1">
+                <img src="img/pic117.jpg" alt=""/>
+            </div>
+            <div class="brandL2">
+                <img src="img/pic118.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic119.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic120.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic121.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic122.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic123.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic124.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic125.jpg" alt="" style="border-top: none"/>
+            </div>
+        </div>
+        <div class="brandR">
+            <div class="brandR1">
+                <img src="img/pic126.jpg" alt=""/>
+            </div>
+            <ul class="brandR2">
+                <li><img src="img/pic127.jpg" alt=""/><a href="javascript:;">热销面膜</a></li>
+                <li><img src="img/pic128.jpg" alt=""/><a href="javascript:;">省心套装</a></li>
+                <li><img src="img/pic129.jpg" alt=""/><a href="javascript:;">洁面</a></li>
+                <li style="border-top: none"><img src="img/pic130.jpg" alt=""/><a href="javascript:;">口红</a></li>
+                <li style="border-top: none"><img src="img/pic131.jpg" alt=""/><a href="javascript:;">裸妆bb</a></li>
+                <li style="border-top: none"><img src="img/pic132.jpg" alt=""/><a href="javascript:;">香水</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--家具生活-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i class="icn9"></i></h3>
+    </div>
+    <!--家具生活内容-->
+    <div class="brand clearfix">
+        <div class="brandL clearfix">
+            <div class="brandL1">
+                <img src="img/pic134.jpg" alt=""/>
+            </div>
+            <div class="brandL2">
+                <img src="img/pic135.png" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic136.png" alt="" style="border-top: none"/>
+                <img src="img/pic137.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic138.png" alt="" style="border-top: none"/>
+                <img src="img/pic139.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic140.png" alt="" style="border-top: none"/>
+                <img src="img/pic141.png" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic142.png" alt="" style="border-top: none"/>
+            </div>
+        </div>
+        <div class="brandR">
+            <div class="brandR1">
+                <img src="img/pic143.jpg" alt=""/>
+            </div>
+            <ul class="brandR2">
+                <li><img src="img/pic144.png" alt=""/><a href="javascript:;">租房小家具</a></li>
+                <li><img src="img/pic145.png" alt=""/><a href="javascript:;">晴雨伞</a></li>
+                <li><img src="img/pic146.png" alt=""/><a href="javascript:;">玻璃杯</a></li>
+                <li style="border-top: none"><img src="img/pic147.png" alt=""/><a href="javascript:;">美发神器</a></li>
+                <li style="border-top: none"><img src="img/pic148.png" alt=""/><a href="javascript:;">精致手机壳</a></li>
+                <li style="border-top: none"><img src="img/pic149.png" alt=""/><a href="javascript:;">收纳控</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--辣妈潮宝-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i class="icn10"></i></h3>
+    </div>
+    <!--辣妈潮宝内容-->
+    <div class="brand clearfix">
+        <div class="brandL clearfix">
+            <div class="brandL1">
+                <img src="img/pic151.jpg" alt=""/>
+            </div>
+            <div class="brandL2">
+                <img src="img/pic152.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic153.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic154.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic155.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic156.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic157.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic158.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic159.jpg" alt="" style="border-top: none"/>
+            </div>
+        </div>
+        <div class="brandR">
+            <div class="brandR1">
+                <img src="img/pic160.jpg" alt=""/>
+            </div>
+            <ul class="brandR2">
+                <li><img src="img/pic161.jpg" alt=""/><a href="javascript:;">小公主</a></li>
+                <li><img src="img/pic162.jpg" alt=""/><a href="javascript:;">小王子</a></li>
+                <li><img src="img/pic163.jpg" alt=""/><a href="javascript:;">时髦孕妈</a></li>
+                <li style="border-top: none"><img src="img/pic164.jpg" alt=""/><a href="javascript:;">舒适童鞋</a></li>
+                <li style="border-top: none"><img src="img/pic165.jpg" alt=""/><a href="javascript:;">益智玩具</a></li>
+                <li style="border-top: none"><img src="img/pic166.jpg" alt=""/><a href="javascript:;">必备用品</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--吃心绝对-->
+    <div class="goodProducts_title clearfix">
+        <div class="bias1"></div>
+        <div class="bias2"></div>
+
+        <h3><i class="icn11"></i></h3>
+    </div>
+    <!--吃心绝对内容-->
+    <div class="brand clearfix">
+        <div class="brandL clearfix">
+            <div class="brandL1">
+                <img src="img/pic168.jpg" alt=""/>
+            </div>
+            <div class="brandL2">
+                <img src="img/pic169.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic170.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic171.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic172.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic173.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic174.jpg" alt="" style="border-top: none"/>
+                <img src="img/pic175.jpg" alt="" style="border-top: none;border-right: none"/>
+                <img src="img/pic176.jpg" alt="" style="border-top: none"/>
+            </div>
+        </div>
+        <div class="brandR">
+            <div class="brandR1">
+                <img src="img/pic177.jpg" alt=""/>
+            </div>
+            <ul class="brandR2">
+                <li><img src="img/pic178.jpg" alt=""/><a href="javascript:;">点心</a></li>
+                <li><img src="img/pic179.jpg" alt=""/><a href="javascript:;">熟食／辣条</a></li>
+                <li><img src="img/pic180.jpg" alt=""/><a href="javascript:;">方便速食</a></li>
+                <li style="border-top: none"><img src="img/pic181.jpg" alt=""/><a href="javascript:;">花草茶</a></li>
+                <li style="border-top: none"><img src="img/pic182.jpg" alt=""/><a href="javascript:;">坚果</a></li>
+                <li style="border-top: none"><img src="img/pic183.jpg" alt=""/><a href="javascript:;">饼干/膨化</a></li>
+            </ul>
+        </div>
     </div>
 </div>
+
+
+
+<script src="js/utils.js"></script>
+<script src="js/move.js"></script>
+<script src="js/banner.js"></script>
+
+<script>
+    var tab=new Banner('big',2000,2)
+</script>
 </body>
 </html>
